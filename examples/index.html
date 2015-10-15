@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body ng-app="app">
+<div ng-controller="AppCtrl">
+  <button ng-click="notify1()">notify</button>
+</div>
+
+<script src="./angular.min.js"></script>
+<script src="../dist/ng-notify.min.js"></script>
+
+<script>
+  angular.module('app', ['ng-notify']).controller('AppCtrl', function($scope, $log, notify) {
+
+    $scope.notify1 = function() {
+      $log.debug('notify1');
+      notify('Hello World!');
+    };
+
+  });
+</script>
+</body>
+</html>

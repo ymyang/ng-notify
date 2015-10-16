@@ -2,7 +2,16 @@
   "name": "ng-notify",
   "version": "1.0.0",
   "description": "Notification for angular",
-  "main": "ng-notify.js",
+  "main": "app://localhost/examples/index.html",
+  "single-instance": true,
+  "window": {
+    "title": "ng-notify",
+    "show": true,
+    "toolbar": false,
+    "position": "center",
+    "width": 400,
+    "height": 300
+  },
   "directories": {
     "example": "examples"
   },

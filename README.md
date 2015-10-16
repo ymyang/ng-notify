@@ -1,2 +1,2 @@
 # ng-notify
-Notification for angular
+angular notification for nw
